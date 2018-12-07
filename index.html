@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eternale Hotel</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul class="navbar__list">
+			<li class="navbar__item navbar__logo">Logo</li>
+			<li class="navbar__item"><a href="/">Home</a></li>
+			<li class="navbar__item"><a href="">Rooms & suites</a></li>
+			<li class="navbar__item"><a href="">Dining & Pub</a></li>
+			<li class="navbar__item"><a href="">Services</a></li>
+			<li class="navbar__item"><a href="">Events</a></li>
+			<li class="navbar__item"><a href="">Contact</a></li>
+			<li class="navbar__item navbar__book"><div class="navbar__book__book"><a href="">Book your stay</a></div></li>
+		</ul>
+	</nav>
+	<!-- <div class="main">
+		<div class="main__left main__part">
+			<a href="#" class="button__frame ">
+				<div class="button__empty button--pool">Pool</div>
+			</a>
+		</div>
+		<div class="main__right ">
+			<div class="main__right--top main__part">
+				<a href="#" class="button__frame">
+					<div class="button__empty">Gymnastic</div>
+				</a>
+			</div>
+			<div class="main__right--bottom">
+				<div class="main__right--bottom--left main__part">
+					<a href="#" class="button__frame">
+						<div class="button__empty">Yoga</div>
+					</a>
+				</div>
+				<div class="main__right--bottom--right main__part">
+					<a href="#" class="button__frame">
+						<div class="button__empty button--massage">Massage</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- <a href="#" class="button__frame">
+		<div class="button__empty">explore</div>
+	</a> -->
+
+	<div class="main1">
+		<div class="main1--top">
+			<div class="main1--top--center">
+				<div class="main1--top--center--item">
+					<div class="main1--top--center--item--left">
+						<div class="main1--top--center--item--left--outercircle"></div>
+						<div class="main1--top--center--item--left--innercircle"></div>
+					</div>
+					<div class="main1--top--center--item--right">
+						<h3>Phones</h6>
+						<p>+84444234234</p>
+						<p>+8492813749832174</p>
+					</div>
+				</div>
+				<div class="main1--top--center--item">
+					<div class="main1--top--center--item--left">
+						<div class="main1--top--center--item--left--outercircle"></div>
+						<div class="main1--top--center--item--left--innercircle"></div>
+					</div>
+					<div class="main1--top--center--item--right">
+						<h3>Address</h6>
+						<p>45 Hang Hanh,</p>
+						<p>Old Quarter, Hanoi</p>
+					</div>
+				</div>
+				<div class="main1--top--center--item">
+					<div class="main1--top--center--item--left">
+						<div class="main1--top--center--item--left--outercircle"></div>
+						<div class="main1--top--center--item--left--innercircle"></div>
+					</div>
+					<div class="main1--top--center--item--right">
+						<h3>Email</h6>
+						<p>eternal-hotel@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="left main__part">
+			<a href="#" class="button__frame">
+				<div class="button__empty">pool</div>
+			</a>
+		</div>
+		<div class="right">
+			<div class="right--top main__part">
+				<a href="#" class="button__frame">
+					<div class="button__empty">gymnastic</div>
+				</a>
+			</div>
+			<div class="right--bottom">
+				<div class="right--bottom--left main__part">
+					<a href="#" class="button__frame">
+						<div class="button__empty">yoga</div>
+					</a>
+				</div>	
+				<div class="right--bottom--right main__part">
+					<a href="#" class="button__frame">
+						<div class="button__empty">massage</div>
+					</a>
+				</div>	
+			</div>
+		</div> -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.0199120422801!2d105.84818192917304!3d21.029498850906645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9597a49bbd%3A0x11156c3b028fee1!2zMTViIE5nw7UgSHV54buHbiwgSMOgbmcgVHLhu5FuZywgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1544143019680" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="main1--contact">
+			<div class="main1--contact--center">
+				<h2 onclick="openContactForm()">Contact Us</h2>
+				<form class="contactform" action="/#" method='POST'>
+					<div class="contactform--top">
+						<div class="contactform--top--top">
+							<div class="contactform--top--top--left">
+								<label for='name'>Your name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="contactform--top--top--right">
+								<label for='phonenumber'>Your phone number</label>
+								<input type="text" name="phonenumber" id="phonenumber" />
+							</div>
+
+						</div>
+						<div class="contactform--top--bottom">
+							<div class="contactform--top--bottom--left">
+								<label for='email'>Your email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="contactform--top--bottom--right">
+								<label for='address'>Your address</label>
+								<input type="text" name="address" id="address" />
+							</div>
+
+						</div>
+						<div class="contactform--top--message">
+							<label for="message">Your message</label>
+							<textarea id="message" name="message"></textarea>
+						</div>
+					</div>
+						<div class="button__frame">
+							<input type="submit" value="Send" class="button__submit" />
+						</div>
+						
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function openContactForm() {
+			let element = document.querySelector('.main1--contact--center');
+			element.classList.toggle('main1--contact--center__open');
+		}
+	</script>
+</body>
+</html>
