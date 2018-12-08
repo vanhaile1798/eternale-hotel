@@ -205,10 +205,10 @@
 						<li>18</li>
 						<li>19</li>
 						<li>20</li>
-						<li>21</li>
-						<li>22</li>
-						<li>23</li>
-						<li>24</li>
+						<li class="active">21</li>
+						<li class="selected">22</li>
+						<li class="selected">23</li>
+						<li class="active">24</li>
 						<li>25</li>
 						<li>26</li>
 						<li>27</li>
@@ -275,7 +275,10 @@
 					<label for="staydate">Your Stay Date</label>
 					<input type="text" id="staydate" name="staydate" class="main--book--center--content--form--input" value="22 Nov 2018 - 23 Nov 2018" />
 					<label for="roomtype">Type of Room</label>
-					<input type="text" id="roomtype" name="roomtype" class="main--book--center--content--form--input" value="Deluxe Room" />
+					<!-- <input type="text" id="roomtype" name="roomtype" class="main--book--center--content--form--input" value="Deluxe Room" /> -->
+					<select name="roomtype" id="roomtype" class="main--book--center--content--form--input">
+						<option value="deluxe">Deluxe Room</option>
+					</select>
 					<label for="adultnumber">Number of people</label>
 					<div class="main--book--center--content--form--formcontainer">
 						<input type="text" id="adultnumber" name="adultnumber" class="main--book--center--content--form--input main--book--center--content--form--input--half" placeholder="Adults" />

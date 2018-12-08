@@ -467,7 +467,7 @@ textarea {
 /*--------------------------- End SERVICES Section -------------------------*/
 
 
-/*---------------------------- BOOK SEction ---------------------------------*/
+/*---------------------------- BOOKING SEction ---------------------------------*/
 
 .main--book {
 	height: calc(100vh - 80px);
@@ -481,7 +481,7 @@ textarea {
 .main--book--center {
 	height: auto;
 	width: 70%;
-	background: rgba(32,29,26,.8);
+	background: rgba(73,68,65,.9);
 	margin: auto;
 	align-items: center;
 	box-sizing: border-box;
@@ -528,13 +528,77 @@ textarea {
 	box-sizing: border-box;
 	width: calc(100% / 7);
 	padding: 8px 0;
+	transition: all .3s ease;
+	position: relative;
 }
 .main--book--center--content--calendar--days {
 	color: #eae2c5;
 }
 
+
+.main--book--center--content--calendar--days li::before {
+	content: '';
+	position: absolute;
+	border: 1px solid #000;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	opacity: 0;
+}
+
+
+.main--book--center--content--calendar--days li:hover {
+	color: ;
+	background: #b9a155;
+	cursor: pointer;
+}
+
+.main--book--center--content--calendar--days li:hover::before {
+	opacity: 1;
+}
+
+
+li[class="main--book--center--content--calendar--days__unavailable"]:hover {
+	color: #9e9b99;
+	cursor: context-menu;
+	background: transparent;
+}
+
+li[class="main--book--center--content--calendar--days__unavailable"]:hover::before {
+	opacity: 0;
+}
+
+
 .main--book--center--content--calendar--days__unavailable {
 	color: #9e9b99;
+}
+
+.active {
+	position: relative;
+	transition: all 0.3s ease;
+	background: #b9a155;
+	color: #201d1a;
+}
+
+
+.active:hover {
+	color: #eae2c5;
+}
+
+.main--book--center--content--calendar--days li[class="active"]::before {
+	content: '';
+	position: absolute;
+	border: 1px solid #000;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	opacity: 1;
+}
+
+.selected {
+	background: #201d1a;
 }
 
 .main--book--center--content--form {
@@ -551,6 +615,11 @@ textarea {
 	font-family: 'Times New Roman';
 	font-size: 1rem;
 
+}
+
+select {
+	width: 100%;
+  	border: none;
 }
 .main--book--center--content--form--input:focus {
 	outline: none;
