@@ -668,6 +668,35 @@ ul {
 	src: url('/fonts/BASKERVILLEOLDFACE.TTF');
 }
 
+.button__frame {
+	padding: 5px;
+	height: auto;
+	width: auto;
+	display: inline-block;
+	border: 1px solid #b9a155;
+	cursor: pointer;
+}
+
+
+.button__empty {
+	background: transparent;
+    display: inline-block;
+    /*margin: 5px;*/
+    padding: 11px 40px 12px 40px;
+    position: relative;
+    /*border: 1px solid #b9a155;*/
+    text-transform: uppercase;
+    color: #b9a155;
+    transition: all .3s ease;
+    
+}
+
+
+.button__frame:hover .button__empty {
+	color: #201d1a;
+	background: #b9a155;
+}
+
 .main--footer {
 	padding: 32px 0;
 }
@@ -730,6 +759,11 @@ ul {
 	margin-bottom: 16px;
 	background: #201d1a;
 	color: #fff;
+	width: 100%;
+	border: none;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 5px;
 }
 
 .main--footer--content--follow--followus li:first-child {
@@ -811,5 +845,47 @@ ul {
     border-bottom: 18px solid #494441;
     left: 0px;
     top: -18px;
+}
+.main--footer--content--follow--award {
+	line-height: 0;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: url(/img/TRIP1.png);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 16px;
+}
+
+.main--footer p {
+	margin: 0;
+}
+.main--footer ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.main--footer--content--list a, .main--footer--content--follow--about a {
+	text-decoration: none;
+}
+
+ul[class="main--footer--content--follow--followus"] {
+	display: flex;
+	margin-bottom: 16px;
+}
+.main--footer--content--follow--followus li {
+	/*display: inline-block;*/
+}
+
+.main--footer a {
+	transition: all .3s ease;
+}
+.main--footer label {
+	display: block;
+}
+.main--footer--content--follow--followus a {
+	color: #b9a155;
 }
 /*----------------------------------------------- End FOOTER --------------------------*/
